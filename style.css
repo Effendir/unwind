@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgb(17, 31, 23);
+}
+
+header {
+  background-color: rgb(85, 117, 113);
+}
+
+footer {
+  background-color: rgb(85, 117, 113);
+}
+
+p {
+  font-size: 18px;
+  color: rgb(244, 244, 244);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+  text-align: center;
+  color: rgb(155, 56, 84);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(244, 244, 244);
+  border-radius: 5px;
+}
+
+h1 {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h2 {
+  padding: 5px;
+}
+
+img {
+  width: 400px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(244, 244, 244);
+  font-weight: bold;
+}
+
+i {
+  color: rgb(155, 56, 84);
+  font-size: xx-large;
+}
+
+button {
+  background-color: rgb(85, 117, 113);
+  border-radius: 5px;
+  border: 2px solid rgb(244, 244, 244);
+  font-size: 18px;
+  color: rgb(244, 244, 244);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.banner, .spotify, .youtube, .cta, .spotify-cards, footer, header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toggle {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.spotify-cards, .banner {
+  flex-wrap: wrap;
+}
+
+.spotify, .youtube, .cta {
+  flex-direction: column;
+}
+
+.cta {
+  background-color: ;
+}
