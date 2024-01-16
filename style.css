@@ -21,7 +21,7 @@ body {
 }
 
 header, footer {
-  background-color: rgb(85, 117, 113);
+  background-color: rgba(85, 117, 113, 0.5);
   padding: 8px;
 }
 
