@@ -1,3 +1,5 @@
+/* COMPONENTS */
+
 html {
   box-sizing: border-box;
 }
@@ -75,6 +77,8 @@ button {
   padding-bottom: 5px;
 }
 
+/* CLASSES */
+
 .banner, .spotify, .youtube, .cta, .spotify-cards, footer, header {
   display: flex;
   width: 100%;
@@ -104,10 +108,18 @@ button {
   flex-wrap: wrap;
 }
 
-.spotify, .youtube, .cta {
+.spotify, .youtube {
   flex-direction: column;
 }
 
 .cta {
-  background-color: ;
+  background-color: rgb(155, 56, 84);
+  border-radius: 5px;
 }
+
+/* IDS */
+
+
+
+/* RAIN ANIMATION */
+
