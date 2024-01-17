@@ -14,7 +14,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   display: flex;
-  gap: 50px;
+  gap: 30px;
   flex-direction: column;
   align-items: center;
   background: rgb(0, 0, 0);
@@ -46,8 +46,7 @@ h1, h2 {
 h1 {
   margin-left: 200px;
   margin-right: 200px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
 
 h2 {
@@ -89,7 +88,11 @@ button {
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
+}
+
+.banner, .spotify, .youtube, .cta, .spotify-cards, footer {
+  margin-top: 30px;
 }
 
 .header-links {
@@ -110,10 +113,15 @@ button {
 
 .spotify-cards, .banner {
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .spotify, .youtube {
   flex-direction: column;
+}
+
+.spotify-cards {
+  margin-top: 0;
 }
 
 .cta {
@@ -122,7 +130,9 @@ button {
   border-radius: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 25%;
+  width: 22%;
+  display: flex;
+  justify-content: center;
 }
 
 /* IDS */
