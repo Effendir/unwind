@@ -46,8 +46,10 @@ function send_mail() {
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function() {
                 console.log('SUCCESS!');
+                alert("Your mail has been sent :)");
             }, function(error) {
                 console.log('FAILED...', error);
+                alert("Something went wrong, sorry for the inconvenience...");
             });
     });
   }
