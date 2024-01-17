@@ -71,7 +71,7 @@ i {
   font-size: xx-large;
 }
 
-button {
+button, #send-button {
   background-color: rgb(85, 117, 113);
   border-radius: 5px;
   border: 2px solid rgb(244, 244, 244);
