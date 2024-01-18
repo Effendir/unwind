@@ -17,12 +17,13 @@ body {
   gap: 30px;
   flex-direction: column;
   align-items: center;
-  background: rgb(0, 0, 0);
+  background: linear-gradient(#2B5E52, #E6D4C4, #9B3854);
 }
 
 header, footer {
   background-color: rgba(85, 117, 113, 0.5);
   padding: 8px;
+  width: 100%;
 }
 
 p {
@@ -53,12 +54,6 @@ h2 {
   padding: 5px;
 }
 
-img {
-  width: 400px;
-  border-radius: 50%;
-  border: 5px solid rgb(155, 56, 84);
-}
-
 a, label {
   text-decoration: none;
   color: rgb(244, 244, 244);
@@ -83,9 +78,19 @@ button, #send-button {
 
 /* CLASSES */
 
+.banner-picture {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid rgb(155, 56, 84);
+  margin: 0;
+}
+
+.banner {
+  flex-wrap: wrap;
+}
+
 .banner, .spotify, .youtube, .cta, .spotify-cards, footer, header {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -111,7 +116,7 @@ button, #send-button {
   margin-right: 40%;
 }
 
-.spotify-cards, .banner {
+.spotify-cards {
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -141,9 +146,19 @@ button, #send-button {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 1920px;
-  min-height: 1080px;
   height: 100vh;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index:-100;
+}
+
+#youtube-video, .youtube p {
+  max-width: 90%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1080px) {
+  .toggle {
+    display: none;
+  }
 }
