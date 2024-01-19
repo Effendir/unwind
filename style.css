@@ -111,6 +111,10 @@ button, #send-button {
   justify-content: center;
 }
 
+.banner-content p {
+  max-width: 90%;
+}
+
 .toggle {
   margin-left: 40%;
   margin-right: 40%;
@@ -146,10 +150,11 @@ button, #send-button {
   position: fixed;
   right: 0;
   bottom: 0;
-  height: 100%;
   object-fit: cover;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index:-100;
+  overflow: hidden;
+  overflow-clip-margin: content-box;
 }
 
 #youtube-video, .youtube p {
