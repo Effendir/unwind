@@ -17,7 +17,6 @@ body {
   gap: 30px;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(#2B5E52, #E6D4C4, #9B3854);
 }
 
 header, footer {
@@ -109,10 +108,11 @@ button, #send-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .banner-content p {
-  max-width: 90%;
+  max-width: 75%;
 }
 
 .toggle {
@@ -148,13 +148,15 @@ button, #send-button {
 
 #wallpaper {
   position: fixed;
+  width: 100%;
+  height: 100%;
   right: 0;
   bottom: 0;
   object-fit: cover;
-  transform: translateX(calc((100% - 100vw) / 2));
+
   z-index:-100;
-  overflow: hidden;
   overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 #youtube-video, .youtube p {
