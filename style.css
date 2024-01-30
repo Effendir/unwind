@@ -73,6 +73,7 @@ button, #send-button {
   color: rgb(244, 244, 244);
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-top: 5px;
 }
 
 /* CLASSES */
@@ -161,6 +162,14 @@ button, #send-button {
 
 #youtube-video, .youtube p {
   max-width: 90%;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MEDIA QUERIES */

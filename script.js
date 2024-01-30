@@ -1,19 +1,16 @@
-function light_switch() {
+function toggleLightSwitch() {
 
-  const light_switch_button = document.querySelector(".toggle");
+  const lightSwitchButton = document.querySelector(".toggle");
   const wallpaper = document.querySelector("#wallpaper");
-  const wallpaper_credits = document.querySelector("#wallpaper-credits");
 
-  light_switch_button.addEventListener("click", () => {
-    if (light_switch_button.innerHTML == "Night light") {
-      light_switch_button.innerHTML = "Day light";
-      wallpaper_credits.innerHTML = '<p>Live Wallpaper : <a href="https://moewalls.com/lifestyle/lo-fi-cozy-house-rainy-night-live-wallpaper/" target="_blank">Moe Walls</a></p>';
+  lightSwitchButton.addEventListener("click", () => {
+    if (lightSwitchButton.innerHTML == "Night light") {
+      lightSwitchButton.innerHTML = "Day light";
       wallpaper.src = "videos/CozyNightDesktop.mp4";
       wallpaper.load();
       wallpaper.play();
     } else {
-      light_switch_button.innerHTML = "Night light";
-      wallpaper_credits.innerHTML = '<p>Live Wallpaper : <a href="https://www.youtube.com/watch?v=milmM8OxcrE" target="_blank">Live Wall Master</a></p>'
+      lightSwitchButton.innerHTML = "Night light";
       wallpaper.src = "videos/CozyDayDesktop.mp4";
       wallpaper.load();
       wallpaper.play();
@@ -22,19 +19,19 @@ function light_switch() {
 
 }
 
-function mail_form () {
+function displayMailForm () {
   const cta = document.querySelector(".cta")
-  const mail_button = document.querySelector("#send-mail");
-  const form = '<form id="contact-form"><input type="hidden" name="contact_number"><label>Name</label><br><input type="text" name="user_name" required><br><label>Email</label><br><input type="email" name="user_email" required><br><label>Message</label><br><textarea name="message" required></textarea><br><input type="submit" value="Send" id="send-button"><br></form>';
+  const sendMailButton = document.querySelector("#send-mail");
+  const form = '<form id="contact-form"><input type="hidden" name="contact_number"><label>Name</label><input type="text" name="user_name"><label>Email</label><input type="email" name="user_email"><label>Message</label><textarea name="message"></textarea><input type="submit" value="Send" id="send-button"></form>';
 
-  mail_button.addEventListener("click", () => {
+  sendMailButton.addEventListener("click", () => {
     cta.innerHTML = form;
-    send_mail();
+    sendMail();
   });
 
 }
 
-function send_mail() {
+function sendMail() {
   (function() {
     emailjs.init('KaeIisZjDCiWkL-yt');
   })();
@@ -55,5 +52,5 @@ function send_mail() {
   }
 }
 
-light_switch();
-mail_form();
+toggleLightSwitch();
+displayMailForm();
